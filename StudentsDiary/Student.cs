@@ -20,6 +20,7 @@ namespace StudentsDiary
         public string PolishLang { set; get; }  
         public string ForeignLang { set; get; }
         public string Comments { set; get; }
+        public bool IsExtraLessons { set; get; }    
 
     }
 }

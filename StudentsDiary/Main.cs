@@ -29,7 +29,7 @@ namespace StudentsDiary
         private void RefreshDiary()
         {
             var students = _fileHelper.DeserializeFromFile();
-            dgvDiary.DataSource = students;
+            dgvDiary.DataSource = students.OrderBy(x => x.Id).ToList();
         }
 
         private void SetColumnsHeader()
@@ -43,6 +43,7 @@ namespace StudentsDiary
             dgvDiary.Columns[6].HeaderText = "Polski";
             dgvDiary.Columns[7].HeaderText = "Angielski";
             dgvDiary.Columns[8].HeaderText = "Uwagi";
+            dgvDiary.Columns[9].HeaderText = "Zajęcia dodatkowe";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace StudentsDiary
 
             var addEditStudent = new AddEditStudent(
                 Convert.ToInt32(dgvDiary.SelectedRows[0].Cells[0].Value));
+            addEditStudent.FormClosing += AddEditStudent_FormClosing;
             addEditStudent.ShowDialog();
 
         }

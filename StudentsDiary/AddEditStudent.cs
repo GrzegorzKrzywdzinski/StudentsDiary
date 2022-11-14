@@ -46,14 +46,15 @@ namespace StudentsDiary
                 tbTechnology.Text = student.Technology;
                 tbPolishLang.Text = student.PolishLang;
                 tbForeignLang.Text = student.ForeignLang;
-                rtbComments.Text = student.Comments;    
+                rtbComments.Text = student.Comments;
+                chbIsExtraLessons.Checked = student.IsExtraLessons;
             }
 
             //zaznaczenie kursorem danego TextBox
             tbFirstName.Select();
         }
 
-        private async void btnConfirm_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
             var students = _fileHelper.DeserializeFromFile();
 
@@ -79,6 +80,7 @@ namespace StudentsDiary
             student.Technology = tbTechnology.Text;
             student.ForeignLang = tbForeignLang.Text;
             student.Comments = rtbComments.Text;
+            student.IsExtraLessons = chbIsExtraLessons.Checked;
 
             //dodanie studenta do listy
             students.Add(student);

@@ -48,6 +48,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btmCancel = new System.Windows.Forms.Button();
+            this.chbIsExtraLessons = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbId
@@ -198,7 +199,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(234, 350);
+            this.btnConfirm.Location = new System.Drawing.Point(235, 378);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(92, 23);
             this.btnConfirm.TabIndex = 18;
@@ -208,7 +209,7 @@
             // 
             // btmCancel
             // 
-            this.btmCancel.Location = new System.Drawing.Point(128, 350);
+            this.btmCancel.Location = new System.Drawing.Point(131, 378);
             this.btmCancel.Name = "btmCancel";
             this.btmCancel.Size = new System.Drawing.Size(89, 23);
             this.btmCancel.TabIndex = 19;
@@ -216,11 +217,22 @@
             this.btmCancel.UseVisualStyleBackColor = true;
             this.btmCancel.Click += new System.EventHandler(this.btmCancel_Click);
             // 
+            // chbIsExtraLessons
+            // 
+            this.chbIsExtraLessons.AutoSize = true;
+            this.chbIsExtraLessons.Location = new System.Drawing.Point(101, 337);
+            this.chbIsExtraLessons.Name = "chbIsExtraLessons";
+            this.chbIsExtraLessons.Size = new System.Drawing.Size(144, 20);
+            this.chbIsExtraLessons.TabIndex = 20;
+            this.chbIsExtraLessons.Text = "Zajęcia dodatkowe";
+            this.chbIsExtraLessons.UseVisualStyleBackColor = true;
+            // 
             // AddEditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 390);
+            this.ClientSize = new System.Drawing.Size(342, 413);
+            this.Controls.Add(this.chbIsExtraLessons);
             this.Controls.Add(this.btmCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.label8);
@@ -241,8 +253,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.lbId);
-            this.MaximumSize = new System.Drawing.Size(363, 437);
-            this.MinimumSize = new System.Drawing.Size(363, 437);
+            this.MaximumSize = new System.Drawing.Size(360, 460);
+            this.MinimumSize = new System.Drawing.Size(360, 460);
             this.Name = "AddEditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodawanie studenta";
@@ -273,5 +285,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btmCancel;
+        private System.Windows.Forms.CheckBox chbIsExtraLessons;
     }
 }
