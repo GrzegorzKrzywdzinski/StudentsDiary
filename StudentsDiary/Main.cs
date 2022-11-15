@@ -22,6 +22,7 @@ namespace StudentsDiary
         public Main()
         {
             InitializeComponent();
+            SetComboBoxSearchIdGroup();
             RefreshDiary();
             SetColumnsHeader();
         }
@@ -29,7 +30,26 @@ namespace StudentsDiary
         private void RefreshDiary()
         {
             var students = _fileHelper.DeserializeFromFile();
-            dgvDiary.DataSource = students.OrderBy(x => x.Id).ToList();
+
+            if(cbxSearchIdGroup.SelectedIndex == 0)
+                dgvDiary.DataSource =
+                students.OrderBy(x => x.Id).ToList();
+            else
+                dgvDiary.DataSource =
+               students.Where(x => x.IdGroup == cbxSearchIdGroup.Text).OrderBy(x => x.Id).ToList();
+
+
+        }
+
+        private void SetComboBoxSearchIdGroup()
+        {
+            cbxSearchIdGroup.Items.Add("Wszystkie");
+
+            foreach (var item in Program.ComboBoxItems)
+            {
+                cbxSearchIdGroup.Items.Add(item.ToString());
+            }
+            cbxSearchIdGroup.SelectedIndex = 0;
         }
 
         private void SetColumnsHeader()
@@ -44,6 +64,7 @@ namespace StudentsDiary
             dgvDiary.Columns[7].HeaderText = "Angielski";
             dgvDiary.Columns[8].HeaderText = "Uwagi";
             dgvDiary.Columns[9].HeaderText = "Zajęcia dodatkowe";
+            dgvDiary.Columns[10].HeaderText = "Grupa";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

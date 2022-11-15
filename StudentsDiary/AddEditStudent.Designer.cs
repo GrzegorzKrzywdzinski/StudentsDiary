@@ -31,24 +31,26 @@
             this.lbId = new System.Windows.Forms.Label();
             this.tbId = new System.Windows.Forms.TextBox();
             this.tbFirstName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbFirstName = new System.Windows.Forms.Label();
             this.tbLastName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbLastName = new System.Windows.Forms.Label();
             this.tbMath = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbMath = new System.Windows.Forms.Label();
             this.tbTechnology = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbTechnology = new System.Windows.Forms.Label();
             this.tbPhysics = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbPhysics = new System.Windows.Forms.Label();
             this.tbPolishLang = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbPolishLang = new System.Windows.Forms.Label();
             this.tbForeignLang = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbForeignLang = new System.Windows.Forms.Label();
             this.rtbComments = new System.Windows.Forms.RichTextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbComents = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btmCancel = new System.Windows.Forms.Button();
             this.chbIsExtraLessons = new System.Windows.Forms.CheckBox();
+            this.cbxIdGroup = new System.Windows.Forms.ComboBox();
+            this.lbIdGroup = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbId
@@ -75,14 +77,14 @@
             this.tbFirstName.Size = new System.Drawing.Size(225, 22);
             this.tbFirstName.TabIndex = 3;
             // 
-            // label1
+            // lbFirstName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Imię:";
+            this.lbFirstName.AutoSize = true;
+            this.lbFirstName.Location = new System.Drawing.Point(13, 41);
+            this.lbFirstName.Name = "lbFirstName";
+            this.lbFirstName.Size = new System.Drawing.Size(35, 16);
+            this.lbFirstName.TabIndex = 2;
+            this.lbFirstName.Text = "Imię:";
             // 
             // tbLastName
             // 
@@ -91,14 +93,14 @@
             this.tbLastName.Size = new System.Drawing.Size(225, 22);
             this.tbLastName.TabIndex = 5;
             // 
-            // label2
+            // lbLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Nazwisko:";
+            this.lbLastName.AutoSize = true;
+            this.lbLastName.Location = new System.Drawing.Point(13, 69);
+            this.lbLastName.Name = "lbLastName";
+            this.lbLastName.Size = new System.Drawing.Size(68, 16);
+            this.lbLastName.TabIndex = 4;
+            this.lbLastName.Text = "Nazwisko:";
             // 
             // tbMath
             // 
@@ -107,14 +109,14 @@
             this.tbMath.Size = new System.Drawing.Size(225, 22);
             this.tbMath.TabIndex = 7;
             // 
-            // label3
+            // lbMath
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 16);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Matematyka:";
+            this.lbMath.AutoSize = true;
+            this.lbMath.Location = new System.Drawing.Point(13, 97);
+            this.lbMath.Name = "lbMath";
+            this.lbMath.Size = new System.Drawing.Size(84, 16);
+            this.lbMath.TabIndex = 6;
+            this.lbMath.Text = "Matematyka:";
             // 
             // tbTechnology
             // 
@@ -123,14 +125,14 @@
             this.tbTechnology.Size = new System.Drawing.Size(225, 22);
             this.tbTechnology.TabIndex = 9;
             // 
-            // label4
+            // lbTechnology
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Technologia:";
+            this.lbTechnology.AutoSize = true;
+            this.lbTechnology.Location = new System.Drawing.Point(13, 125);
+            this.lbTechnology.Name = "lbTechnology";
+            this.lbTechnology.Size = new System.Drawing.Size(86, 16);
+            this.lbTechnology.TabIndex = 8;
+            this.lbTechnology.Text = "Technologia:";
             // 
             // tbPhysics
             // 
@@ -139,14 +141,14 @@
             this.tbPhysics.Size = new System.Drawing.Size(225, 22);
             this.tbPhysics.TabIndex = 11;
             // 
-            // label5
+            // lbPhysics
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 153);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Fizyka:";
+            this.lbPhysics.AutoSize = true;
+            this.lbPhysics.Location = new System.Drawing.Point(13, 153);
+            this.lbPhysics.Name = "lbPhysics";
+            this.lbPhysics.Size = new System.Drawing.Size(49, 16);
+            this.lbPhysics.TabIndex = 10;
+            this.lbPhysics.Text = "Fizyka:";
             // 
             // tbPolishLang
             // 
@@ -155,14 +157,14 @@
             this.tbPolishLang.Size = new System.Drawing.Size(225, 22);
             this.tbPolishLang.TabIndex = 13;
             // 
-            // label6
+            // lbPolishLang
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 181);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 16);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Język polski:";
+            this.lbPolishLang.AutoSize = true;
+            this.lbPolishLang.Location = new System.Drawing.Point(13, 181);
+            this.lbPolishLang.Name = "lbPolishLang";
+            this.lbPolishLang.Size = new System.Drawing.Size(84, 16);
+            this.lbPolishLang.TabIndex = 12;
+            this.lbPolishLang.Text = "Język polski:";
             // 
             // tbForeignLang
             // 
@@ -171,14 +173,14 @@
             this.tbForeignLang.Size = new System.Drawing.Size(225, 22);
             this.tbForeignLang.TabIndex = 15;
             // 
-            // label7
+            // lbForeignLang
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 209);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 16);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Język obcy:";
+            this.lbForeignLang.AutoSize = true;
+            this.lbForeignLang.Location = new System.Drawing.Point(13, 209);
+            this.lbForeignLang.Name = "lbForeignLang";
+            this.lbForeignLang.Size = new System.Drawing.Size(78, 16);
+            this.lbForeignLang.TabIndex = 14;
+            this.lbForeignLang.Text = "Język obcy:";
             // 
             // rtbComments
             // 
@@ -188,18 +190,18 @@
             this.rtbComments.TabIndex = 16;
             this.rtbComments.Text = "";
             // 
-            // label8
+            // lbComents
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 238);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 16);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Uwagi:";
+            this.lbComents.AutoSize = true;
+            this.lbComents.Location = new System.Drawing.Point(13, 238);
+            this.lbComents.Name = "lbComents";
+            this.lbComents.Size = new System.Drawing.Size(48, 16);
+            this.lbComents.TabIndex = 17;
+            this.lbComents.Text = "Uwagi:";
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(235, 378);
+            this.btnConfirm.Location = new System.Drawing.Point(235, 398);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(92, 23);
             this.btnConfirm.TabIndex = 18;
@@ -209,7 +211,7 @@
             // 
             // btmCancel
             // 
-            this.btmCancel.Location = new System.Drawing.Point(131, 378);
+            this.btmCancel.Location = new System.Drawing.Point(134, 398);
             this.btmCancel.Name = "btmCancel";
             this.btmCancel.Size = new System.Drawing.Size(89, 23);
             this.btmCancel.TabIndex = 19;
@@ -227,34 +229,53 @@
             this.chbIsExtraLessons.Text = "Zajęcia dodatkowe";
             this.chbIsExtraLessons.UseVisualStyleBackColor = true;
             // 
+            // cbxIdGroup
+            // 
+            this.cbxIdGroup.FormattingEnabled = true;
+            this.cbxIdGroup.Location = new System.Drawing.Point(102, 364);
+            this.cbxIdGroup.Name = "cbxIdGroup";
+            this.cbxIdGroup.Size = new System.Drawing.Size(224, 24);
+            this.cbxIdGroup.TabIndex = 21;
+            // 
+            // lbIdGroup
+            // 
+            this.lbIdGroup.AutoSize = true;
+            this.lbIdGroup.Location = new System.Drawing.Point(12, 367);
+            this.lbIdGroup.Name = "lbIdGroup";
+            this.lbIdGroup.Size = new System.Drawing.Size(47, 16);
+            this.lbIdGroup.TabIndex = 22;
+            this.lbIdGroup.Text = "Grupa:";
+            // 
             // AddEditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 413);
+            this.ClientSize = new System.Drawing.Size(342, 433);
+            this.Controls.Add(this.lbIdGroup);
+            this.Controls.Add(this.cbxIdGroup);
             this.Controls.Add(this.chbIsExtraLessons);
             this.Controls.Add(this.btmCancel);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lbComents);
             this.Controls.Add(this.rtbComments);
             this.Controls.Add(this.tbForeignLang);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lbForeignLang);
             this.Controls.Add(this.tbPolishLang);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbPolishLang);
             this.Controls.Add(this.tbPhysics);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbPhysics);
             this.Controls.Add(this.tbTechnology);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbTechnology);
             this.Controls.Add(this.tbMath);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbMath);
             this.Controls.Add(this.tbLastName);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbLastName);
             this.Controls.Add(this.tbFirstName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbFirstName);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.lbId);
-            this.MaximumSize = new System.Drawing.Size(360, 460);
-            this.MinimumSize = new System.Drawing.Size(360, 460);
+            this.MaximumSize = new System.Drawing.Size(360, 480);
+            this.MinimumSize = new System.Drawing.Size(360, 480);
             this.Name = "AddEditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodawanie studenta";
@@ -268,23 +289,25 @@
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.TextBox tbId;
         private System.Windows.Forms.TextBox tbFirstName;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbFirstName;
         private System.Windows.Forms.TextBox tbLastName;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbLastName;
         private System.Windows.Forms.TextBox tbMath;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbMath;
         private System.Windows.Forms.TextBox tbTechnology;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbTechnology;
         private System.Windows.Forms.TextBox tbPhysics;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbPhysics;
         private System.Windows.Forms.TextBox tbPolishLang;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbPolishLang;
         private System.Windows.Forms.TextBox tbForeignLang;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbForeignLang;
         private System.Windows.Forms.RichTextBox rtbComments;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbComents;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btmCancel;
         private System.Windows.Forms.CheckBox chbIsExtraLessons;
+        private System.Windows.Forms.ComboBox cbxIdGroup;
+        private System.Windows.Forms.Label lbIdGroup;
     }
 }

@@ -11,6 +11,16 @@ namespace StudentsDiary
     {
 
         public static string FilePath = Path.Combine(Environment.CurrentDirectory, "students.txt");
+        public static List<string> ComboBoxItems = new List<string>(){
+        "Klasa 0",
+        "Klasa 1",
+        "Klasa 2",
+        "Klasa 3",
+        "Klasa 4",
+        "Klasa 5",
+        "Klasa 6",
+        "Klasa 7",
+        "Klasa 8", };
 
         /// <summary>
         /// The main entry point for the application.

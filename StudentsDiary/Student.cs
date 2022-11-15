@@ -21,6 +21,7 @@ namespace StudentsDiary
         public string ForeignLang { set; get; }
         public string Comments { set; get; }
         public bool IsExtraLessons { set; get; }    
+        public string IdGroup { set; get; } 
 
     }
 }

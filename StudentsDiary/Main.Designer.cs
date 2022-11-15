@@ -33,6 +33,8 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvDiary = new System.Windows.Forms.DataGridView();
+            this.lbSeearchIdGroup = new System.Windows.Forms.Label();
+            this.cbxSearchIdGroup = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,12 +100,32 @@
             this.dgvDiary.Size = new System.Drawing.Size(1293, 387);
             this.dgvDiary.TabIndex = 4;
             // 
+            // lbSeearchIdGroup
+            // 
+            this.lbSeearchIdGroup.AutoSize = true;
+            this.lbSeearchIdGroup.Location = new System.Drawing.Point(459, 15);
+            this.lbSeearchIdGroup.Name = "lbSeearchIdGroup";
+            this.lbSeearchIdGroup.Size = new System.Drawing.Size(47, 16);
+            this.lbSeearchIdGroup.TabIndex = 5;
+            this.lbSeearchIdGroup.Text = "Grupa:";
+            // 
+            // cbxSearchIdGroup
+            // 
+            this.cbxSearchIdGroup.FormattingEnabled = true;
+            this.cbxSearchIdGroup.Location = new System.Drawing.Point(512, 11);
+            this.cbxSearchIdGroup.Name = "cbxSearchIdGroup";
+            this.cbxSearchIdGroup.Size = new System.Drawing.Size(238, 24);
+            this.cbxSearchIdGroup.TabIndex = 6;
+            this.cbxSearchIdGroup.SelectedIndexChanged += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1318, 450);
+            this.Controls.Add(this.cbxSearchIdGroup);
+            this.Controls.Add(this.lbSeearchIdGroup);
             this.Controls.Add(this.dgvDiary);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
@@ -113,6 +135,7 @@
             this.Text = "Dziennik ucznia";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -123,6 +146,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridView dgvDiary;
+        private System.Windows.Forms.Label lbSeearchIdGroup;
+        private System.Windows.Forms.ComboBox cbxSearchIdGroup;
     }
 }
 
